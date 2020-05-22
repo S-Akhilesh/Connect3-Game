@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="398dp"
+        android:layout_height="398dp"
+        android:layout_marginTop="182dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/board"
+        app:rowCount="3"
+        app:columnCount="3">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="106dp"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:onClick="Show"
+            
+            android:tag="0"/>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="106dp"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:onClick="Show"
+            
+            android:tag="1"/>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="106dp"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:onClick="Show"
+            
+            android:tag="2"/>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="106dp"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:onClick="Show"
+            
+            android:tag="3"/>
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="106dp"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:onClick="Show"
+            
+            android:tag="4"/>
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="106dp"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:onClick="Show"
+            
+            android:tag="5"/>
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="106dp"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="Show"
+            
+            android:tag="6"/>
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="106dp"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:onClick="Show"
+            
+            android:tag="7"/>
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="106dp"
+            android:layout_height="99dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:onClick="Show"
+            
+            android:tag="8"/>
+
+
+        
+    </androidx.gridlayout.widget.GridLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Restart"
+        />
+</RelativeLayout>
